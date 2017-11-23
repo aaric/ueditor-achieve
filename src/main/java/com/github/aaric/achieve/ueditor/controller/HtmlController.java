@@ -23,6 +23,7 @@ public class HtmlController {
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public ModelAndView hello() {
         ModelAndView modelAndView = new ModelAndView("hello");
+        modelAndView.addObject("name", "Thymeleaf");
         return modelAndView;
     }
 }
