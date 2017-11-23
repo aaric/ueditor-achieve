@@ -32,7 +32,14 @@
 <script type="text/javascript" th:src="@{ueditor/1.4.3.3/ueditor.all.js}"></script>
 <!-- 实例化编辑器 -->
 <script type="text/javascript">
-    var ue = UE.getEditor('container');
+    var editor = UE.getEditor('container');
+    editor.ready(function(){
+        editor.setContent('hello');
+        var html = editor.getContent();
+        console.log(html);
+        var txt = editor.getContentTxt();
+        console.log(txt);
+    });
 </script>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
