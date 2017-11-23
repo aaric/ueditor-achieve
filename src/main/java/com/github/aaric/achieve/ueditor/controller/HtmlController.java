@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
  * @since 1.0-SNAPSHOT
  */
 @Controller
-@RequestMapping("/html")
+@RequestMapping
 public class HtmlController {
 
     /**
